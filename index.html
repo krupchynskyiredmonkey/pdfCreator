@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src='./pdfmake-master/build/pdfmake.js'></script>
+  <script src='./pdfmake-master/build/vfs_fonts.js'></script>
+</head>
+<body>
+  <form>
+    <input type="text" placeholder="name" id="name">
+    <input type="text" placeholder="mid name" id="midName">
+    <input type="text" placeholder="last name" id="lastName">
+    <input type="number" placeholder="licence number" id="licenceNumber">
+    <input type="number" placeholder="postal index" id="postalIndex">
+    <input type="text" placeholder="Region" id="region">
+    <input type="text" placeholder="city" id="city">
+    <input type="text" placeholder="street" id="street">
+    <input type="text" placeholder="house number" id="houseNumber">
+    <input type="submit" id="submitBtn">
+  </form>
+
+  <div class="letter-place">
+    <div class="header-letter">
+      Головному управлінню ДПС <br>
+   у Хмельницькій області <br>
+   ПАТ «АГРОЗБРУЧ» <br>
+   31200, Хмельницька область, місто Волочиськ, <br>
+   вул. Незалежності, буд. 25, <br>
+   тел. 0211112233 ЄДРПОУ 11111111 <br>
+    </div>
+  
+    <div class="title">
+      <h1 class="h1-letter">Заява</h1>
+      <p class="title-p-letter">на одержання дубліката ліцензії на право роздрібної торгівлі пальним</p>
+    </div>
+  
+    <div class="main-letter">
+      <p>Прошу видати дублікат ліцензії на право роздрібної торгівлі пальним,
+        реєстраційний номер № <span id="licenceNumberPlace">33054214202100022</span>, термін дії ліцензій з 15.02.2021,
+        видану на місце торгівлі, що знаходиться за адресою: <span id='postalIndexPlace'>31200</span>, <span id='regionPlace'>Хмельницька
+        область</span>, <span id='cityPlace'>місто Волочиськ</span>, вул. <span id='streetPlace'>Тернопільська</span>, <span id='housePlace'>15</span>, у зв’язку із втратою.
+         Платіжне доручення додається. </p>
+    </div>
+  
+    <div class="footer-letter">
+      <div class="top-text"> Підпис заявника <br>
+        (Керівник підприємства/фізична особа – підприємець/уповноважена особа по договору про
+        спільну діяльність) </div>
+        <div class="bottom-text-letter">
+          <div id="namePlace">Ковальчук О.І.</div>
+          <div id="datePlace">Дата</div>
+        </div>
+    </div>
+  </div>
+
+  </script>
+  <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 200px;
+  height: 50px;
+  margin-top: 25px;
+}
+
+
+/* * {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 21cm;
+  height: 29.7cm;
+} */
+
+.letter-place {
+  width: 21cm;
+  height: 29.7cm;
+  font-size: 14px;
+  padding: 100px 75px;
+}
+
+.header-letter {
+  text-align: right;
+}
+
+.h1-letter {
+  padding-top: 250px;
+  text-align: center;
+}
+
+.title-p-letter {
+  text-align: center;
+}
+
+.main-letter {
+  padding-top: 50px;
+}
+
+.footer-letter {
+  padding-top: 50px;
+}
+
+.bottom-text-letter {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
